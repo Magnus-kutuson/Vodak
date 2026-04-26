@@ -1,33 +1,3 @@
-/* SECTION COMMON */
-  section {
-    padding: 100px 60px;
-  }
-
-  .section-eyebrow {
-    font-size: 0.7rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .section-eyebrow::before {
-    content: '';
-    width: 30px;
-    height: 1px;
-    background: var(--accent);
-  }
-
-  .section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(2rem, 4vw, 3.5rem);
-    font-weight: 700;
-    margin-bottom: 60px;
-    line-height: 1.1;
-  }
 
   /* ABOUT */
   .about-grid {
