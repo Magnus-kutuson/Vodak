@@ -1,0 +1,70 @@
+/* EXPERIENCE */
+  .exp-timeline {
+    display: grid;
+    gap: 2px;
+    background: var(--border);
+  }
+
+  .exp-item {
+    background: var(--card);
+    padding: 48px 60px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 40px;
+    align-items: start;
+    transition: background 0.3s;
+  }
+
+  .exp-item:hover { background: #151520; }
+
+  .exp-period {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    text-transform: uppercase;
+    padding-top: 4px;
+  }
+
+  .exp-company {
+    font-size: 0.7rem;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 8px;
+  }
+
+  .exp-role {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  .exp-desc {
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  .exp-bullets {
+    list-style: none;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .exp-bullets li {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .exp-bullets li::before {
+    content: '—';
+    color: var(--accent);
+    flex-shrink: 0;
+    margin-top: 1px;
+  }

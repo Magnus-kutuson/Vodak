@@ -1,0 +1,16 @@
+/* FOOTER */
+  footer {
+    padding: 40px 60px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+
+  footer .logo {
+    font-family: 'Playfair Display', serif;
+    color: var(--accent);
+    font-size: 1rem;
+  }
