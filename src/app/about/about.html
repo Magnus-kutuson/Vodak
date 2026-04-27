@@ -1,57 +1,39 @@
+<!-- ABOUT SECTION -->
 <section id="about">
   <div class="section-eyebrow">Who I Am</div>
   <h2 class="section-title">A designer who bridges<br>beauty and function</h2>
   <div class="about-grid">
     <div class="about-text">
       <p>
-        I'm Nana Dumfeh Agyeman-Badu, a results-driven Graphic and UI/UX Designer based in Accra, Ghana. 
-        With over 5 years of hands-on experience, I create compelling visual identities, intuitive app interfaces, 
+        I'm Nana Dumfeh Agyeman-Badu, a results-driven Graphic and UI/UX Designer based in Accra, Ghana.
+        With over 5 years of hands-on experience, I create compelling visual identities, intuitive app interfaces,
         and high-impact marketing materials.
       </p>
       <p>
-        I hold a BSc in Landscape Design and Management from KNUST, which gives me a unique eye for spatial 
+        I hold a BSc in Landscape Design and Management from KNUST, which gives me a unique eye for spatial
         thinking and environmental aesthetics that I bring to every digital canvas.
       </p>
       <p>
-        Proven ability to lead cross-functional design teams, deliver projects on time, and drive measurable 
+        Proven ability to lead cross-functional design teams, deliver projects on time, and drive measurable
         business outcomes — adept at translating complex requirements into elegant, user-centred designs.
       </p>
     </div>
-   <section id="visual-skills" style="padding: 100px 10%; background: var(--surface);">
-  <h2 style="font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 50px; color: var(--accent);">
-    Creative Work
-  </h2>
-  
-  <div class="skills-grid">
-    <div class="skill-card">
-      <img src="/images/beaute.jpg" alt="Beauty Branding Project">
-      <div class="overlay">
-        <span>Branding & Identity</span>
-      </div>
-    </div>
-
-    <div class="skill-card">
-      <img src="/images/pent.jpg" alt="Interior Design Concept">
-      <div class="overlay">
-        <span>UI / Concept Design</span>
-      </div>
-    </div>
-
-    <div class="skill-card">
-      <img src="/images/szoboszlai.jpg" alt="Digital Graphics">
-      <div class="overlay">
-        <span>Digital Illustration</span>
-      </div>
-    </div>
-
-    <div class="skill-card">
-      <img src="/images/sobolo 1.jpg" alt="Product Photography/Graphics">
-      <div class="overlay">
-        <span>Product Design</span>
-      </div>
-    </div>
-    
-    </div>
+  </div>
 </section>
+
+<!-- CREATIVE WORK SECTION -->
+<section id="visual-skills">
+  <h2 class="creative-title">Creative Work</h2>
+
+  <div class="skills-grid">
+    <div
+      class="skill-card"
+      *ngFor="let skill of skills"
+    >
+      <img [src]="skill.src" [alt]="skill.alt">
+      <div class="overlay">
+        <span>{{ skill.label }}</span>
+      </div>
+    </div>
   </div>
 </section>
